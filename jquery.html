@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Antonella">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="description" content="Sitio Web aprendiendo JS">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/scripts_jquery.js"></script>
+
+    <title>Home | JQuery</title>
+</head>
+
+<body onload="mostrarFechaActualizable();">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">NavBar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="fa-solid fa-otter fa-2x"></i></a>
+                    </li>
+                    <a class="nav-link" href="randomuserme.html">RandomUserMe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jquery.html">JQuery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="openweathermap.html">OpenWeather</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pokemon.html">Pokemon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="countries.html">Countries</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sitios Interes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://stackoverflow.com"
+                                    target="_blank">Stackoverflow</a></li>
+                            <li><a class="dropdown-item" href="https://w3schools.com" target="_blank">w3 Schools</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://inforcap.desafiolab.com"
+                                    target="_blank">Inforcap</a></li>
+                            <li><a class="dropdown-item" href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container p-4 text-center text-white bg-dark rounded-bottom">
+        <h1 class="display-1">Introduccion a JQuery <br> Una biblioteca de JS</h1>
+        <p id="fecha"></p>
+        <p id="fecha_actualizable"></p>
+    </header>
+
+    <main class="container my-4">
+        <div class="row py-4">
+            <p id="parrafo01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, qui modi nostrum nam
+                cupiditate ab?
+                Accusantium exercitationem itaque sunt sed aliquid unde voluptatibus porro quisquam, error rerum
+                molestias, quae ipsa quidem distinctio at. Impedit sint at eos similique recusandae, nobis eligendi
+                omnis distinctio? Ea amet voluptates necessitatibus corrupti sapiente asperiores odit temporibus quae,
+                consectetur ipsa sint, consequatur omnis officiis fugit, accusamus sit earum. Cumque ut natus delectus,
+                numquam alias voluptas quibusdam commodi blanditiis debitis error. Deserunt officiis expedita tempore
+                exercitationem eos esse provident, repellendus cupiditate quas maiores optio vero pariatur, hic rem
+                fugit magnam, nobis ut suscipit deleniti itaque necessitatibus.</p>
+        </div>
+        <div class="row py-4">
+            <p id="parrafo02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, qui modi nostrum nam
+                cupiditate ab?
+                Accusantium exercitationem itaque sunt sed aliquid unde voluptatibus porro quisquam, error rerum
+                molestias, quae ipsa quidem distinctio at. Impedit sint at eos similique recusandae, nobis eligendi
+                omnis distinctio? Ea amet voluptates necessitatibus corrupti sapiente asperiores odit temporibus quae,
+                consectetur ipsa sint, consequatur omnis officiis fugit, accusamus sit earum. Cumque ut natus delectus,
+                numquam alias voluptas quibusdam commodi blanditiis debitis error. Deserunt officiis expedita tempore
+                exercitationem eos esse provident, repellendus cupiditate quas maiores optio vero pariatur, hic rem
+                fugit magnam, nobis ut suscipit deleniti itaque necessitatibus.</p>
+        </div>
+
+        <div class="row py-4">
+            <div class="col">
+                <img id="ampolleta" src="assets/img/apagada.jpeg" alt="Luz Apagada">
+            </div>
+        </div>
+        <hr>
+        <div class="row py-4">
+            <div class="col">
+                <p id="text-hover">Acerca el mouse a este párrafo</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row py-4">
+            <div class="mb-3">
+                <input class="form-control" type="text" id="frase" name="frase"
+                    placeholder="Ingresa tu frase favorita del dia y luego presiona el boton...">
+            </div>
+            <div class="mb-3">
+                <button type="button" class="btn btn-outline-primary" id="button01">Presióname!!</button>
+            </div>
+            <p id="frase_ingresada"></p>
+        </div>
+        <hr>
+        <h2>Manejo de funciones en JQuery</h2>
+        <div class="row py-4">
+            <div class="col-md-6">
+                <h3>Evento 'CLICK'</h3>
+                <button id="button02" type="button" class="btn btn-outline-primary">Presioname</button>
+            </div>
+            <div class="col-md-6">
+                <p id="resolucion"></p>
+            </div>
+        </div>
+        <div class="row py-4">
+            <div class="col-md-6">
+                <h3>Evento hide y show</h3>
+                <button id="button03" type="button" class="btn btn-outline-primary">Presioname para ocultar el
+                    texto</button>
+                <button id="button04" type="button" class="btn btn-outline-primary">Presioname para mostrar el
+                    texto</button>
+            </div>
+            <div class="col-md-6">
+                <p id="parrafo03">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ea ratione suscipit
+                    fugiat excepturi doloribus dicta quis eos temporibus repellendus, quaerat porro vero consectetur
+                    dolor velit repellat quibusdam accusamus odio ducimus, ipsa alias. Quod non blanditiis quo quia
+                    neque est doloribus consectetur! Unde neque, ratione aut, illum, aspernatur cumque velit delectus
+                    enim quos voluptates rem iusto fugiat. Reprehenderit ipsum atque omnis nostrum sint accusantium
+                    animi repudiandae explicabo a nisi expedita vel modi doloremque placeat repellat doloribus aperiam,
+                    quidem assumenda corrupti aspernatur. Quisquam alias, vitae placeat, praesentium modi vel blanditiis
+                    aut hic rem obcaecati atque cum, deleniti nisi consectetur facere enim?</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row py-4">
+            <div class="col-md-6">
+                <h3>Evento 'toggle'</h3>
+                <button id="button05" type="button" class="btn btn-outline-primary">Presioname para toggler una
+                    imagen</button>
+
+            </div>
+            <div class="col-md-6">
+                <img id="imagen_accion05" src="http://picsum.photos/300/300" alt="">
+            </div>
+        </div>
+        <div class="row py-4">
+            <div class="col-md-6">
+                <h3>Evento 'slide down'</h3>
+                <button id="button06" type="button" class="btn btn-outline-primary">Presioname para slidedown</button>
+            </div>
+            <div class="col-md-6">
+                <img id="imagen_accion06" src="http://picsum.photos/300/300" alt="">
+            </div>
+        </div>
+        <div class="row py-4">
+            <div class="col-md-6">
+                <h3>Evento 'slide up'</h3>
+                <button id="button07" type="button" class="btn btn-outline-primary">Presioname para slide up</button>
+
+            </div>
+            <div class="col-md-6">
+                <img id="imagen_accion07" src="http://picsum.photos/300/300" alt="">
+            </div>
+        </div>
+        <div class="row py-4">
+            <div class="col-md-6">
+                <h3>Evento 'slide toggle'</h3>
+                <button id="button08" type="button" class="btn btn-outline-primary">Presioname para slide
+                    toggle</button>
+            </div>
+            <div class="col-md-6">
+                <ul id="lista_accion08">
+                    <li>Argentina</li>
+                    <li>Chile</li>
+                    <li>Peru</li>
+                    <li>Bolivia</li>
+                    <li>Colombia</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row py-4">
+            <div class="col-md-6">
+                <h3>Evento 'Before'</h3>
+                <button id="button09" type="button" class="btn btn-outline-primary">Presioname para Before</button>
+            </div>
+            <div class="col-md-6">
+                <p id="parrafo09">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quo?</p>
+            </div>
+        </div>
+        <div class="row py-4">
+            <div class="col-md-6">
+                <h3>Evento 'After'</h3>
+                <button id="button10" type="button" class="btn btn-outline-primary">Presioname para After</button>
+            </div>
+            <div class="col-md-6">
+                <p id="parrafo10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quo?</p>
+            </div>
+        </div>
+
+        <div class="row py-4">
+            <div class="col-md-6">
+                <h3>Evento 'Append'</h3>
+                <button id="button11" type="button" class="btn btn-outline-primary">Presioname para After</button>
+            </div>
+            <div class="col-md-6">
+                <ul id="parrafo11">
+                   
+                </ul>
+            </div>
+        </div>
+
+        <div class="row py-4">
+            <div class="col-md-6">
+                <h3>Evento '.html'</h3>
+                <button id="button12" type="button" class="btn btn-outline-primary">Presioname para After</button>
+            </div>
+            <div class="col-md-6">
+                <p id="parrafo12">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, adipisci.
+                </p>
+            </div>
+        </div>
+        <hr>
+        
+
+    </main>
+
+    <footer class="container-fluid bg-dark p-5 mt-2">
+        <div class="row text-light">
+            <div class="col-12 col-md-4 mb-3 text-center">
+                <i class="fa-solid fa-otter fa-4x"></i>
+                <p>Otter S.A. &copy;2020 Todos los derechos reservados</p>
+                <p>Bootcamp Trainee Python</p>
+            </div>
+            <div class="col-12 col-md-4 mb-3 text-center">
+                <h4>Mapa del sitio</h4>
+                <hr>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="randomuserme.html">RandomUserMe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="jquery.html">JQuery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="openweathermap.html">OpenWeather</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pokemon.html">Pokemon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="countries.html">Countries</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card bg-transparent border-0">
+                    <div class="card-header">
+                        <h5 class="card-tittle text-light">Suscribete a nuestro newsletter</h5>
+                    </div>
+                    <div class="card-body border-0">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Ingresa tu correo electrónico"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-light" type="button"><i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-footer border-0"></div>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://www.github.com"><i
+                                    class="fa-brands fa-github fa-3x"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://www.linkedin.com"><i
+                                    class="fa-brands fa-linkedin fa-3x"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://www.instagram.com"><i
+                                    class="fa-brands fa-instagram fa-3x"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://www.facebook.com"><i
+                                    class="fa-brands fa-facebook fa-3x"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="https://www.twitter.com"><i
+                                    class="fa-brands fa-twitter fa-3x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="text-light">
+        <div class="row p-2 text-center text-light">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
